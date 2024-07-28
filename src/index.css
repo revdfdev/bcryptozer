@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.bcryptesizor-font {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+.alexis-blue {
+  color: #40607f;
+}
+
+.hills-of-ireland {
+  color: #539951;
+}
+
+.violet-web-cape {
+  color: #7f407f;
+}
+
+.berkeley-hills {
+  color: #7f6040;
+}
+
+.background-pattern {
+   --dot-bg: #141414;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+}
+
+/* background-color: #e5e5f7;
+opacity: 0.8;
+
+background-size: 20px 20px; */
