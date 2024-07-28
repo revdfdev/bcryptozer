@@ -11,8 +11,6 @@ const Input = ({
     ...props
 }) => {
 
-    console.log("pROPDS ", props)
-
     return (
         <input
             className={classNames(

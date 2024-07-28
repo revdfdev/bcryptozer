@@ -16,9 +16,7 @@ class GeneratorBloc {
 
     async verifyBcryptText(bcryptText, plainText) {
         try {
-            console.log("verifyBcryptText ", bcryptText, plainText)
             const isVerified = await compareSync(plainText, bcryptText)
-            console.log("isVerified ", isVerified)
             this._state.next({
                 isValid: isVerified,
                 error: null
