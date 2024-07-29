@@ -2,6 +2,7 @@ import React, { Suspense, useEffect } from 'react'
 import { HiLockClosed, HiLockOpen } from 'react-icons/hi'
 import './App.css'
 import Card from './components/Cards'
+import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import Snackbar from './components/SnackBar'
 import { useDialog, useGenerator, useHasher, useSnackBar } from './state/BlocContext'
@@ -90,7 +91,7 @@ function App() {
     <>
       <div className='w-full h-full flex background-pattern flex-col'>
         <NavBar />
-        <main className='w-full h-screen mt-2 background-pattern flex flex-row justify-between'>
+        <main className='w-full h-full mt-2 background-pattern flex flex-row justify-between'>
           <div className='w-1/2 h-full justify-center items-center'>
             <Card title="Hasher" pointers={hasherPointers} headline="Hash your password" icon={<HiLockClosed className='text-sambucus-500 w-8 h-8 mb-2' />}>
               <Suspense fallback={<>Loading....</>}>
@@ -106,6 +107,7 @@ function App() {
             </Card>
           </div>
         </main>
+        <Footer />
         <Snackbar />
       </div>
     </>
