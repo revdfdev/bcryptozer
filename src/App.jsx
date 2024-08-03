@@ -88,11 +88,10 @@ function App() {
   }, [hashBloc, generatorBloc])
 
   return (
-    <>
-      <div className='w-full h-full flex background-pattern flex-col'>
+    <div className='w-full h-screen flex background-pattern flex-col'>
         <NavBar />
-        <main className='w-full h-full mt-2 background-pattern flex flex-row justify-between'>
-          <div className='w-1/2 h-full justify-center items-center'>
+        <main className='w-full mt-2 background-pattern flex flex-row justify-between'>
+          <div className='w-1/2 justify-center items-center'>
             <Card title="Hasher" pointers={hasherPointers} headline="Hash your password" icon={<HiLockClosed className='text-sambucus-500 w-8 h-8 mb-2' />}>
               <Suspense fallback={<>Loading....</>}>
                 <Hasher />
@@ -110,7 +109,6 @@ function App() {
         <Footer />
         <Snackbar />
       </div>
-    </>
   )
 }
 
